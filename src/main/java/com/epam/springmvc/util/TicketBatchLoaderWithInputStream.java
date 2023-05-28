@@ -5,12 +5,14 @@ import com.epam.springmvc.model.Ticket;
 import com.epam.springmvc.model.implementation.TicketImpl;
 import com.epam.springmvc.util.xml.TicketXml;
 import com.epam.springmvc.util.xml.TicketsXml;
+import org.springframework.stereotype.Component;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.InputStream;
 
+//@Component
 public class TicketBatchLoaderWithInputStream {
     private final TicketDao ticketDao;
     private final InputStream inputStream;

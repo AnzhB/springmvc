@@ -24,7 +24,7 @@ public class RestTicketController {
     public ResponseEntity<String> handleFileUpload(@RequestParam("file") MultipartFile file) {
         try {
             InputStream inputStream = file.getInputStream();
-            bookingFacade.preloadTickets2(inputStream);
+            bookingFacade.preloadTickets(inputStream);
             return ResponseEntity.ok("File uploaded successfully");
         } catch (IOException e) {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("Failed to upload file");

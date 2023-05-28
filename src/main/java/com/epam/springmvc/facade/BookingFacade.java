@@ -19,7 +19,7 @@ public interface BookingFacade {
      * Populate tickets storage based on predefined file
      */
     boolean preloadTickets();
-    boolean preloadTickets2(InputStream inputStream);
+    boolean preloadTickets(InputStream inputStream);
 
     /**
      * Generate pdf tickets report for user

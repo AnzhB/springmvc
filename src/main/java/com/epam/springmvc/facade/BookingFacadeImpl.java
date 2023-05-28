@@ -33,7 +33,7 @@ public class BookingFacadeImpl implements BookingFacade {
     }
 
     @Override
-    public boolean preloadTickets2(InputStream inputStream) {
+    public boolean preloadTickets(InputStream inputStream) {
         return ticketService.preloadTickets2(inputStream);
     }
 
